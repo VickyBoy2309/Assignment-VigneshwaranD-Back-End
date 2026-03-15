@@ -1,3 +1,5 @@
+//Task - 5
+
 public class SmallOfArray {
 
   public static void main(String[] args) {

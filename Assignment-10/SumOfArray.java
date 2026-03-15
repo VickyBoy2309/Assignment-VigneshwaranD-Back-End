@@ -1,4 +1,6 @@
-public class SumArray {
+//Task  - 2
+
+public class SumOfArray {
 
   public static void main(String[] args) {
 

@@ -1,3 +1,5 @@
+//Task - 3
+
 public class AvgOfArray {
 
   public static void main(String[] args) {
