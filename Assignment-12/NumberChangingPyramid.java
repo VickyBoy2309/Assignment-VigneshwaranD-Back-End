@@ -1,7 +1,7 @@
 //Task - 5
 
 import java.util.Scanner;
-public class NCP {
+public class NumberChangingPyramid {
 
   public static void main(String[] args) {
 

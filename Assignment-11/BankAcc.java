@@ -7,7 +7,7 @@ abstract class Acc {
   Acc(double balance) {
     this.balance = balance;
   }
-
+  
   abstract void calInt();
 }
 
