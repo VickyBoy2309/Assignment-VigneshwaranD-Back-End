@@ -34,3 +34,5 @@ public class HollowDiamond {
     }
   }
 }
+
+//Task - 6 is also included in the repo !!
