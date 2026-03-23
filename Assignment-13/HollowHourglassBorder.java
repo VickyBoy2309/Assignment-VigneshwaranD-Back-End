@@ -1,3 +1,5 @@
+//Task - 6
+
 public class HollowHourglassBorder {
 
   public static void main(String[] args) {
