@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class SL {
+public class SecondLargest {
 
   public static void main(String[] args) {
 
