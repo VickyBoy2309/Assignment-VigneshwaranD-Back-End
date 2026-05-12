@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Available Products</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      .container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .card {
+        background: white;
+        width: 250px;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+      }
+
+      .price {
+        color: green;
+        font-size: 26px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>🛍 Available Products</h1>
+
+    <div class="container" id="productContainer"></div>
+
+    <script>
+      fetch("/products")
+        .then((response) => response.json())
+        .then((products) => {
+          let container = document.getElementById("productContainer");
+
+          products.forEach((product) => {
+            container.innerHTML += `
+
+                        <div class="card">
+
+                            <img src="${product.image}">
+
+                            <h2>${product.name}</h2>
+
+                            <p class="price">
+                                ₹${product.price}
+                            </p>
+
+                        </div>
+                    `;
+          });
+        });
+    </script>
+  </body>
+</html>
